@@ -5,3 +5,4 @@
 * TG03 AI Behaviour Trees
 * TG04 AI Blackboard Data
 * TG05 Target Points & Patrol Routes
+* TG06 Using Any Actor for Waypoints
