@@ -14,6 +14,9 @@ class S05_TESTINGGROUNDS_API APatrollingGuard : public ATP_ThirdPersonCharacter
 {
 	GENERATED_BODY()
 
+public:
+	TArray<AActor*> GetPatrolPointsCPP() const;
+
 protected:
 
 	UPROPERTY(EditInstanceOnly, Category = "Patrol Route")
