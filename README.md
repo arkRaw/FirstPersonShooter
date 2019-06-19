@@ -12,3 +12,4 @@
 * TG10 Performance Profiling
 * TG11 C++ AI Behaviour Tree Task
 * TG12 Reading Blackboard Data in C++
+* TG13 The Consequences of Inheritance
