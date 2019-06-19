@@ -15,3 +15,4 @@
 * TG13 The Consequences of Inheritance
 * TG14 Converting Blueprint to C++
 * TG15 Composition over Inheritance
+* TG16 Delete a C++ Class
