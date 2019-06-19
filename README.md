@@ -14,3 +14,4 @@
 * TG12 Reading Blackboard Data in C++
 * TG13 The Consequences of Inheritance
 * TG14 Converting Blueprint to C++
+* TG15 Composition over Inheritance
