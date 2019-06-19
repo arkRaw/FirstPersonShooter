@@ -7,3 +7,4 @@
 * TG05 Target Points & Patrol Routes
 * TG06 Using Any Actor for Waypoints
 * TG07 Options for Grouping Actors
+* TG08 Blueprint Behaviour Tree Tasks
