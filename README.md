@@ -18,3 +18,4 @@
 * TG16 Delete a C++ Class
 * TG17 After Class Deletion
 * TG18 Instanced Materials
+* TG19 AI Perception & OnTargetPerceptionUpdatedEvent
