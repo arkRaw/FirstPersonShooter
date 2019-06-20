@@ -23,3 +23,4 @@
 * TG21 The Animation Starter Pack
 * TG22 Changing a Character's Animation
 * TG23 Customising a Character Blueprint
+* TG24 Sub Behaviour Trees
