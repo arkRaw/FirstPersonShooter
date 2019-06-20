@@ -17,3 +17,4 @@
 * TG15 Composition over Inheritance
 * TG16 Delete a C++ Class
 * TG17 After Class Deletion
+* TG18 Instanced Materials
