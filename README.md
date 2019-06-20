@@ -20,3 +20,4 @@
 * TG18 Instanced Materials
 * TG19 AI Perception & OnTargetPerceptionUpdatedEvent
 * TG20 AI Hearing Perception in Unreal
+* TG21 The Animation Starter Pack
