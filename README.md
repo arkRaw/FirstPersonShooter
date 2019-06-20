@@ -22,3 +22,4 @@
 * TG20 AI Hearing Perception in Unreal
 * TG21 The Animation Starter Pack
 * TG22 Changing a Character's Animation
+* TG23 Customising a Character Blueprint
