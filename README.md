@@ -25,3 +25,4 @@
 * TG23 Customising a Character Blueprint
 * TG24 Sub Behaviour Trees
 * TG25 Simplifying our Project
+* TG26 Renaming & Moving CPP
