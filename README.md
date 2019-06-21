@@ -28,3 +28,4 @@
 * TG26 Renaming & Moving CPP
 * TG27 Fixing Assets
 * TG28 Understanding Animation Blueprints
+* TG29 Creating Animation State Machines
