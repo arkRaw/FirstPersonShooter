@@ -26,3 +26,5 @@
 * TG24 Sub Behaviour Trees
 * TG25 Simplifying our Project
 * TG26 Renaming & Moving CPP
+* TG27 Fixing Assets
+* TG28 Understanding Animation Blueprints
