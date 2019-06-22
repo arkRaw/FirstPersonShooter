@@ -32,3 +32,5 @@
 * TG30 Movement Blend Spaces
 * TG31 Offset Animations
 * TG32 Aiming Blend Spaces Offsets
+* TG33 Rotating with SetFocalPoint()
+* TG34 Behavior Tree Decorators
