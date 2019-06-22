@@ -30,3 +30,4 @@
 * TG28 Understanding Animation Blueprints
 * TG29 Creating Animation State Machines
 * TG30 Movement Blend Spaces
+* TG31 Offset Animations
