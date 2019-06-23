@@ -34,3 +34,4 @@
 * TG32 Aiming Blend Spaces Offsets
 * TG33 Rotating with SetFocalPoint()
 * TG34 Behavior Tree Decorators
+* TG35 Behavior Tree Services
