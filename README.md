@@ -36,3 +36,4 @@
 * TG34 Behavior Tree Decorators
 * TG35 Behavior Tree Services
 * TG36 Tweaking AI Behaviour
+* TG37 Debugging AI Behaviour
