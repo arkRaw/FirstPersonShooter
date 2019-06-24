@@ -39,3 +39,4 @@
 * TG37 Debugging AI Behaviour
 * TG38 Refactoring to a Gun Actor
 * TG39 Configuring the Gun
+* TG40 Child Actor Components
