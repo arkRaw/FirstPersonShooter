@@ -37,3 +37,4 @@
 * TG35 Behavior Tree Services
 * TG36 Tweaking AI Behaviour
 * TG37 Debugging AI Behaviour
+* TG38 Refactoring to a Gun Actor
