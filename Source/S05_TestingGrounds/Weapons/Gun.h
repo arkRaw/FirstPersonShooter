@@ -41,8 +41,6 @@ public:
 
 protected:
 
-	/** Fires a projectile. */
-	void OnFire();
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -50,4 +48,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	/** Fires a projectile. */
+	void OnFire();
 };
