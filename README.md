@@ -41,4 +41,5 @@
 * TG39 Configuring the Gun
 * TG40 Child Actor Components
 * TG41 Inverse Kinematics with Animations
-* TG42 Comparing Blueprints with Diffs
+* TG42 Comparing Blueprints with 
+* TG43 Boolean Blending for Aim States
