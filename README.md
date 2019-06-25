@@ -44,3 +44,4 @@
 * TG42 Comparing Blueprints with 
 * TG43 Boolean Blending for Aim States
 * TG44 Adding Fire Animations
+* TG45 Animation Notify Events
