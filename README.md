@@ -40,3 +40,4 @@
 * TG38 Refactoring to a Gun Actor
 * TG39 Configuring the Gun
 * TG40 Child Actor Components
+* TG41 Inverse Kinematics with Animations
