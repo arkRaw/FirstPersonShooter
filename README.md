@@ -46,3 +46,4 @@
 * TG44 Adding Fire Animations
 * TG45 Animation Notify Events
 * TG46 Taking Damage in Blueprint
+* TG47 Death Animations & Refactor
