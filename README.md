@@ -51,4 +51,5 @@
 * TG49 Owner Invisible Meshes
 * TG50 Firing from Gun Meshes
 * TG51 Architecture of Infinite Runners
-* TG52 Level Gating for Testing Grounds
+* TG52 Spawnning Terrain in the Game Mode
+* TG53 Level Gating for Testing Grounds
