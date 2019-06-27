@@ -59,3 +59,4 @@
 * TG57 Hit vs Overlap Events
 * TG58 Dynamically Calculating NavMesh
 * TG59 Custom BT Tasks & Decorators
+* TG60 *EDIT:Custom BT Tasks & Decorators
