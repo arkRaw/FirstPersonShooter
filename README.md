@@ -58,3 +58,4 @@
 * TG56 Merging my TP & FP Files
 * TG57 Hit vs Overlap Events
 * TG58 Dynamically Calculating NavMesh
+* TG59 Custom BT Tasks & Decorators
