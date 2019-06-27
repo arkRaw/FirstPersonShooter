@@ -54,3 +54,4 @@
 * TG52 Spawnning Terrain in the Game Mode
 * TG53 Level Gating for Testing Grounds
 * TG54 Swapping Materials in Blueprint
+* TG55 Garbage Collecting Previous Tiles
