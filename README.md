@@ -60,3 +60,4 @@
 * TG58 Dynamically Calculating NavMesh
 * TG59 Custom BT Tasks & Decorators
 * TG60 *EDIT:Custom BT Tasks & Decorators
+* TG61 Removing BuildData(Lighting) from Version Control
