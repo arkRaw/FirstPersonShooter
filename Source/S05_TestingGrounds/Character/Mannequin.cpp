@@ -6,6 +6,7 @@
 #include "Camera/CameraComponent.h"
 #include "Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
 #include "../Weapons/Gun.h"
+#include "Components/InputComponent.h"
 
 // Sets default values
 AMannequin::AMannequin()
@@ -32,7 +33,7 @@ AMannequin::AMannequin()
 	Mesh1P->RelativeLocation = FVector(-0.5f, -4.4f, -155.7f);
 }
 
-void AMannequin::Fire()
+void AMannequin::PullTrigger()
 {
 	Gun->OnFire();
 }
@@ -50,6 +51,12 @@ void AMannequin::BeginPlay()
 		);
 	Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
 	Gun->AnimInstance = Mesh1P->GetAnimInstance();
+
+	// Bind fire event
+	if (InputComponent != NULL)
+	{
+		InputComponent->BindAction("Fire", IE_Pressed, this, &AMannequin::PullTrigger);
+	}
 }
 
 // Called every frame

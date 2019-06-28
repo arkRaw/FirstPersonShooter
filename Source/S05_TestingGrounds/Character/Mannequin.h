@@ -29,7 +29,7 @@ public:
 
 	/** Fires a projectile. */
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	void Fire();
+	void PullTrigger();
 
 protected:
 	// Called when the game starts or when spawned
