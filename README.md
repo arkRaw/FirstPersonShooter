@@ -65,3 +65,4 @@
 * TG63 Converting a Character BP to C++
 * TG64 Who's Pulled the Trigger?
 * TG65 Cooldown Nodes & Gameplay Tags
+* TG66 Animation Montages & Slots
