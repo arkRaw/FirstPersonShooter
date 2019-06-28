@@ -66,3 +66,4 @@
 * TG64 Who's Pulled the Trigger?
 * TG65 Cooldown Nodes & Gameplay Tags
 * TG66 Animation Montages & Slots
+* TG67 Reattaching the Gun
