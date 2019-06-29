@@ -69,3 +69,4 @@
 * TG67 Reattaching the Gun
 * TG68 Procedural Level Generation
 * TG69 Generating Random Numbers
+* TG70 Spawning Actors in the Tile
