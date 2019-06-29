@@ -72,3 +72,4 @@
 * TG70 Spawning Actors in the Tile
 * TG71 Sphere Casting in C++
 * TG72 Configure Custom Trace Channels
+* TG73 Spawning into Free Space
