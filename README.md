@@ -70,3 +70,4 @@
 * TG68 Procedural Level Generation
 * TG69 Generating Random Numbers
 * TG70 Spawning Actors in the Tile
+* TG71 Sphere Casting in C++
