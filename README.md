@@ -75,3 +75,4 @@
 * TG73 Spawning into Free Space
 * TG74 Randomising Rotation & Scale
 * TG75 Flyweight Pattern for Foliage
+* TG76 Choosong Waypoint with EQS
