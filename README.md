@@ -77,3 +77,4 @@
 * TG75 Flyweight Pattern for Foliage
 * TG76 Choosong Waypoint with EQS
 * TG77 Find Actors of Type C++
+* TG78 Plumbing an Actor Pool Setup

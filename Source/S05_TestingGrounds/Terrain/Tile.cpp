@@ -4,6 +4,7 @@
 #include "Tile.h"
 #include "Engine/World.h"
 #include "DrawDebugHelpers.h"
+#include "../ActorPool.h"
 
 // Sets default values
 ATile::ATile()
@@ -12,6 +13,13 @@ ATile::ATile()
 	PrimaryActorTick.bCanEverTick = true;
 
 }
+
+
+void ATile::SetPool(UActorPool * InPool)
+{
+	Pool = InPool;
+}
+
 
 // Called when the game starts or when spawned
 void ATile::BeginPlay()
