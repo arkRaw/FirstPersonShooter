@@ -25,7 +25,7 @@ AActor * UActorPool::Checkout()
 
 void UActorPool::Return(AActor * ActorToReturn)
 {
-	Pool.Push(ActorToReturn);
+	Add(ActorToReturn);
 }
 
 void UActorPool::Add(AActor * ActorToAdd)

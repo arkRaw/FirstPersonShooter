@@ -5,12 +5,19 @@
 #include "Engine/World.h"
 #include "DrawDebugHelpers.h"
 #include "../ActorPool.h"
+#include "Runtime/Engine/Classes/AI/NavigationSystemBase.h"
 
 // Sets default values
 ATile::ATile()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	NavigationBoundsOffset = FVector(2000, 0, 0);
+
+	MinExtent = FVector(0.f, -2000.f, 0.f);
+
+	MaxExtent = FVector(4000.f, 2000.f, 0.f);
 
 }
 
@@ -29,7 +36,8 @@ void ATile::PositionNavMeshBoundsVolume()
 	{
 		return;
 	}
-	NavMeshBoundsVolume->SetActorLocation(GetActorLocation());
+	NavMeshBoundsVolume->SetActorLocation(GetActorLocation() + NavigationBoundsOffset);
+	FNavigationSystem::Build(*GetWorld());
 }
 
 
@@ -40,22 +48,13 @@ void ATile::BeginPlay()
 {
 	Super::BeginPlay();
 
-	MinExtent = FVector(0.f, -2000.f, 0.f);
-
-	MaxExtent = FVector(4000.f, 2000.f, 0.f);
-
-
 }
 
 void ATile::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	Super::EndPlay(EndPlayReason);
-	if (NavMeshBoundsVolume != nullptr)
-	{
-		Pool->Return(NavMeshBoundsVolume);
-	}
-	
-	NavMeshBoundsVolume = nullptr;
+
+	Pool->Return(NavMeshBoundsVolume);
 }
 
 
@@ -81,7 +80,7 @@ void ATile::PlaceActors(TSubclassOf<AActor> ToSpawn, int32 MinSpawn, int32 MaxSp
 
 void ATile::PlaceActor(TSubclassOf<AActor> ToSpawn, FVector SpawnPoint, float Rotation, float Scale)
 {
-	AActor* Spawned = GetWorld()->SpawnActor<AActor>(ToSpawn, SpawnPoint, SpawnPoint.Rotation());
+	AActor* Spawned = GetWorld()->SpawnActor<AActor>(ToSpawn);
 	Spawned->SetActorRelativeLocation(SpawnPoint);
 	Spawned->AttachToActor(this, FAttachmentTransformRules(EAttachmentRule::KeepRelative, false));
 	Spawned->SetActorRotation(FRotator(0, Rotation, 0));
