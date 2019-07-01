@@ -16,15 +16,21 @@ UActorPool::UActorPool()
 
 AActor * UActorPool::Checkout()
 {
-	return nullptr;
+	if (Pool.Num() == 0)
+	{
+		return nullptr;
+	}
+	return Pool.Pop();;
 }
 
 void UActorPool::Return(AActor * ActorToReturn)
 {
+	Pool.Push(ActorToReturn);
 }
 
 void UActorPool::Add(AActor * ActorToAdd)
 {
+	Pool.Push(ActorToAdd);
 }
 
 // Called when the game starts

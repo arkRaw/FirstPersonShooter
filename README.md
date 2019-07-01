@@ -78,3 +78,4 @@
 * TG76 Choosong Waypoint with EQS
 * TG77 Find Actors of Type C++
 * TG78 Plumbing an Actor Pool Setup
+* TG79 Using the Pool API & TArray for Pools

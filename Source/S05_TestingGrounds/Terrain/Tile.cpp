@@ -18,7 +18,21 @@ ATile::ATile()
 void ATile::SetPool(UActorPool * InPool)
 {
 	Pool = InPool;
+
+	PositionNavMeshBoundsVolume();
 }
+
+void ATile::PositionNavMeshBoundsVolume()
+{
+	NavMeshBoundsVolume = Pool->Checkout();
+	if (NavMeshBoundsVolume == nullptr)
+	{
+		return;
+	}
+	NavMeshBoundsVolume->SetActorLocation(GetActorLocation());
+}
+
+
 
 
 // Called when the game starts or when spawned
@@ -26,7 +40,22 @@ void ATile::BeginPlay()
 {
 	Super::BeginPlay();
 
+	MinExtent = FVector(0.f, -2000.f, 0.f);
 
+	MaxExtent = FVector(4000.f, 2000.f, 0.f);
+
+
+}
+
+void ATile::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	Super::EndPlay(EndPlayReason);
+	if (NavMeshBoundsVolume != nullptr)
+	{
+		Pool->Return(NavMeshBoundsVolume);
+	}
+	
+	NavMeshBoundsVolume = nullptr;
 }
 
 
@@ -61,9 +90,7 @@ void ATile::PlaceActor(TSubclassOf<AActor> ToSpawn, FVector SpawnPoint, float Ro
 
 bool ATile::FindEmptyLocation(FVector& OutLocation ,float Radius)
 {
-	FVector Min(0.f, -2000.f, 0.f);
-	FVector Max(4000.f, 2000.f, 0.f);
-	FBox Bounds(Min, Max);
+	FBox Bounds(MinExtent, MaxExtent);
 
 	const int MAX_ATTEMPTS = 100;
 

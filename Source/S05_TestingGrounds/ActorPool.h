@@ -22,6 +22,9 @@ public:
 
 	void Add(AActor* ActorToAdd);
 
+private:
+	TArray<AActor*> Pool;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
