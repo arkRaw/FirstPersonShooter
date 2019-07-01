@@ -76,3 +76,4 @@
 * TG74 Randomising Rotation & Scale
 * TG75 Flyweight Pattern for Foliage
 * TG76 Choosong Waypoint with EQS
+* TG77 Find Actors of Type C++
