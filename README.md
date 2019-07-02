@@ -83,3 +83,4 @@
 * TG81 Structs to Simpify Function Args
 * TG82 Spawning AI from C++ & Keeping Score
 * TG83 Fixing the Double Spawning
+* TG84 Using the HUD Class
