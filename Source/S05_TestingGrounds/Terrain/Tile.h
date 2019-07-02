@@ -34,7 +34,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Spawn")
 	void PlaceAIPawns(TSubclassOf<APawn> ToSpawn, int32 MinSpawn = 1, int32 MaxSpawn = 3, float Radius = 500);
 
-	void PlaceAIPawn(TSubclassOf<APawn> &ToSpawn, const FSpawnPosition & SpawnPosition);
+	
 
 protected:
 	// Called when the game starts or when spawned
@@ -61,17 +61,19 @@ public:
 
 private:
 
-	TArray<FSpawnPosition> RandomSpawnPositions(int32 MinSpawn, int32 MaxSpawn, float Radius, float MinScale, float MaxScale);
-
-	AActor* NavMeshBoundsVolume;
+	template<class T>
+	void RandomlyPlaceActors(TSubclassOf<T> ToSpawn, int32 MinSpawn, int32 MaxSpawn, float Radius, float MinScale, float MaxScale);
 
 	void PositionNavMeshBoundsVolume();
 
 	bool CanSpawnAtLocation(FVector Location, float Radius);
 
 	void PlaceActor(TSubclassOf<AActor> ToSpawn, const FSpawnPosition& SpawnPosition);
+	void PlaceActor(TSubclassOf<APawn> &ToSpawn, const FSpawnPosition & SpawnPosition);
 
 	bool FindEmptyLocation(FVector&OutLocation, float Radius);
 
 	UActorPool* Pool;
+
+	AActor* NavMeshBoundsVolume;
 };
