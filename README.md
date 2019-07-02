@@ -81,3 +81,4 @@
 * TG79 Using the Pool API & TArray for Pools
 * TG80 Rebuilding Navigation Meshes
 * TG81 Structs to Simpify Function Args
+* TG82 Spawning AI from C++ & Keeping Score
