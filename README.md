@@ -1,4 +1,4 @@
-# TestingGrounds FPS
+# TestingGrounds FPS - First Person Shooter Game with Procedurally Generated Infinite Levels
 ## Project Contents
 * TG01 First Person Character Overview
 * TG02 Third Person Character Overview
